@@ -1,0 +1,5 @@
+// 📁 public/robots.txt
+// =============================
+User-agent: *
+Allow: /
+Sitemap: https://yourdomain.com/sitemap.xml
