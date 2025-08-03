@@ -5,8 +5,17 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import { useEffect, useState } from 'react';
 
+
+type Product = {
+  id: number;
+  title: string;
+  price: number;
+  category: string;
+  image: string;
+};
+
 export default function Home() {
-const someFunction = (data: Product[]) => { ... }
+  const [products, setProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [loading, setLoading] = useState(true);
