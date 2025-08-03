@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [products, setProducts] = useState<any[]>([]);
+const someFunction = (data: Product[]) => { ... }
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [loading, setLoading] = useState(true);
