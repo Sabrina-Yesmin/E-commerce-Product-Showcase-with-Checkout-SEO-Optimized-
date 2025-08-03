@@ -2,12 +2,20 @@
 
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+interface CartItem {
+  id: number;
+  title: string;
+  price: number;
+  quantity: number;
+  image: string;
+}
+
 interface Order {
   id: string;
   fullName: string;
   shippingAddress: string;
   phoneNumber: string;
-  items: any[];
+  items: CartItem[];
   total: number;
   timestamp: string;
 }
